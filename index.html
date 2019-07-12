@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tasks</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        #title_input {
+            padding-left: 10px;
+        }
+
+        input,
+        li,
+        button {
+            height: 40px;
+            border-color: silver;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 8px;
+        }
+
+        input {
+            width: 200px;
+        }
+
+        button {
+            width: 40px;
+        }
+
+        li {
+            width: 350px;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+
+        li .fa {
+            float: right;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        .fa-circle {
+            display: none;
+        }
+
+        li:hover .fa-circle {
+            display: block;
+        }
+
+        .fa-check-circle {
+            color: green;
+        }
+    </style>
+    <script src="./main.js"></script>
+</head>
+
+<body>
+    <input id="title_input" type="text" />
+    <button id="btn">Add</button>
+    <ul id="tasks" class="list">
+        <li>Task1
+            <i class="fa fa-trash" title="delete"></i>
+            <i class="fa fa-circle" title="is it complete?"></i>
+        </li>
+        <li>Task2
+            <i class="fa fa-trash" title="delete"></i>
+            <i class="fa fa-circle" title="is it complete?"></i>
+        </li>
+    </ul>
+</body>
+
+</html>
